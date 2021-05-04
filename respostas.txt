@@ -178,21 +178,21 @@ EXERCICIOS SELEÇÃO
 
 3)
     let valorA = Number(prompt("Insira um valor"))
-    if(valorA > 10)
+    if (valorA > 10)
             console.log(`${valorA} é maior que 10`)
     console.log("programa finalizado...")
 
 
 4)
     let valorA = Number(prompt("Insira um valor"))
-    if(valorA % 2 == 0)
+    if (valorA % 2 == 0)
     console.log(valorA / 2)
     console.log("programa finalizado...")
 
 
 5)
     let valorA = Number(prompt("Insira um valor"))
-    if(valorA % 2 == 0)
+    if (valorA % 2 == 0)
     console.log(`${valorA} é par`)
     else(console.log(`${valorA} é impar`))
     console.log("programa finalizado...")
@@ -200,7 +200,7 @@ EXERCICIOS SELEÇÃO
 
 6)
     let n1 = Number(prompt("insira um número")) 
-    if(n1 > 20 && n1 < 90) console.log("está entre 20 e 90")
+    if (n1 > 20 && n1 < 90) console.log("está entre 20 e 90")
     else(console.log("Não está entre 20 e 90"))
 
 
@@ -217,9 +217,9 @@ EXERCICIOS SELEÇÃO
     let A = Number(prompt("Insira um número"))
     let B = Number(prompt("Insira um número"))
     let C = Number(prompt("Insira um número"))
-    if(A >= B && A >= C) console.log(`${A} é o maior número`)
-    if(B > A && B >= C) console.log(`${B} é o maior número`)
-    if(C > A && C > B) console.log(`${C} é o maior número`)
+    if (A >= B && A >= C) console.log(`${A} é o maior número`)
+    if (B > A && B >= C) console.log(`${B} é o maior número`)
+    if (C > A && C > B) console.log(`${C} é o maior número`)
 
 
 9)
