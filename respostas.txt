@@ -1,0 +1,255 @@
+Exercício 1:
+    let meuNome = "Jonatan"
+    console.log(`meu nome é ${meuNome}!`)
+
+
+Exercício 2:
+    let um = "1) Cadastrar funcionário"
+    let dois = "2) Listar funcionários"
+    let tres = "3) Editar funcionário"
+    let quatro = "4) Deletar funcionário"
+    let cinco = "5) Sair"
+    console.log(`Cadastro de funcionários:\n${um}\n${dois}\n${tres}\n${quatro}\n${cinco}`)
+
+
+Exercício 3:
+    let adm;
+    let nome;
+    nome = "João"
+    adm = nome
+    console.log(nome)
+
+
+Exercício 4:
+    let nome = "Jonatan Gabriel Busch"
+    let idade = "19 anos"
+    let peso = "59.8 quilos"
+    let altura = "175 centímetros"
+    let telefode = " telefone 988406320"
+    console.log(`${nome}, \n${idade}, \n${peso}, \n${altura}, \n${telefode}`);
+
+
+Exercício 5:
+    let titulo = "Percy Jackson e os olimpianos: O mar de monstros"
+    let edição = "terceira edição"
+    let autor = "Rick Riordan"
+    let data = "julho de 2014"
+    console.log(`${titulo}, ${edição}, escrito por ${autor} e lançado em ${data}.`)
+
+
+Exercício 6:
+    let dataNascimento = "07/03/2002"
+    let numeroFilhos = 1
+    let nomeUsuario = "Jonatan"
+
+
+Exercício 7:
+    let nome = "João"
+    console.log(`Olá ${1}`)       // mostra "olá 1" no console 
+    console.log(`Olá ${"nome"}`) // mostra "olá nome" no console
+    alert(`Olá ${nome}`)        // mostra"olá João" quando abre o site
+
+
+Exercício 8:
+    irá mostrar o número 121 no console
+
+
+Exercício 9:
+    a = 4 e x = 5
+
+
+Exercício 10:
+    A)10
+    B)-1
+    C)2
+    D)6
+    E)9px
+    F)$45
+    G)2
+
+
+Exercício 11:
+    let largura = Number(prompt("largura",))
+    let comprimento = Number(prompt("comprimento"))
+    let perimetro = (largura * 2) + (comprimento * 2 )
+    let area = largura * comprimento
+    console.log(perimetro)
+    console.log(area)
+
+
+Exercício 12:
+    let n1 = Number(prompt("Insira um número"))
+    let n2 = Number(prompt("Agora insira outro"))
+    let soma = n1 + n2
+    console.log(soma
+
+
+Exercício 13:
+    let n1 = Number(prompt("Insira um número"))
+    let n2 = Number(prompt("Agora insira outro"))
+    let media = (n1 + n2) / 2
+    console.log(media)
+
+
+Exercício 14:
+    let n1 = 4; let quadrado1 = n1 ** 2;
+    let n2 = 7; let quadrado2 = n2 ** 2;
+    let n3 = 25; let quadrado3 = n3 ** 2;
+    console.log(quadrado1)
+    console.log(quadrado2)
+    console.log(quadrado3)
+
+
+Exercício 15:
+    let a = 10
+    let b = 20
+    console.log(a, b)
+    let aux = a
+    a = b
+    b = aux
+    console.log(a, b)
+
+
+Exercício 16:
+    let meses = prompt("Insira uma quantidade de meses")
+    let dias = 30 * meses
+    console.log(dias)
+
+
+Exercício 17:
+    let n1 = Number(prompt("insira um número"))
+    let n0 = n1 - 1
+    let n2 = n1 + 1
+    console.log(`Original: ${n1}\nSucessor: ${n2}\nAntecessor: ${n0}`)
+
+
+Exercício 18:
+    let n1 = Number(prompt("insira um número"))
+    let pi = 3.14159
+    let area = (4 / 3) * pi * n1 * 3
+    console.log(area)
+
+
+Exercício 19:
+    let base = Number(prompt("insira o comprimento da base de um triângulo"))    
+    let altura = Number(prompt("agora insira a altura"))
+    let area = (base * altura) / 2
+    console.log(area)
+
+
+Exercício 20:
+    let preço = Number(prompt("insira o preço de um produto"))    
+    let desconto = Number(prompt("agora insira o desconto em porcento"))
+    let fim = preço *((1 - (desconto / 100)))
+    let tirou = preço * (desconto / 100)
+    console.log(`O preço final é ${fim}, descontou ${tirou}`)
+
+
+Exercício 21:
+    let nome = prompt("Insira o nome do funcionário")
+    let salario = Number(prompt("Insira o salario dele"))
+    let vendeu = Number(prompt("Insira quanto ele vendeu"))
+    let pagamento = salario + (vendeu * 0.15)
+    pagamento = pagamento.toFixed(2)
+    console.log(`O ${nome} deve receber ${pagamento}`)""
+
+
+EXERCICIOS SELEÇÃO
+
+
+1)
+    false
+    true
+    true
+    false
+
+
+2)
+    A) true
+    B) true
+    C) erro
+    D) false
+    E) true
+    F) true
+    G) false
+    H) false
+    I) false
+
+
+3)
+    let valorA = Number(prompt("Insira um valor"))
+    if(valorA > 10)
+            console.log(`${valorA} é maior que 10`)
+    console.log("programa finalizado...")
+
+
+4)
+    let valorA = Number(prompt("Insira um valor"))
+    if(valorA % 2 == 0)
+    console.log(valorA / 2)
+    console.log("programa finalizado...")
+
+
+5)
+    let valorA = Number(prompt("Insira um valor"))
+    if(valorA % 2 == 0)
+    console.log(`${valorA} é par`)
+    else(console.log(`${valorA} é impar`))
+    console.log("programa finalizado...")
+
+
+6)
+    let n1 = Number(prompt("insira um número")) 
+    if(n1 > 20 && n1 < 90) console.log("está entre 20 e 90")
+    else(console.log("Não está entre 20 e 90"))
+
+
+7)
+    false
+    true
+    true
+    2
+    undefined
+    false
+
+
+8)
+    let A = Number(prompt("Insira um número"))
+    let B = Number(prompt("Insira um número"))
+    let C = Number(prompt("Insira um número"))
+    if(A >= B && A >= C) console.log(`${A} é o maior número`)
+    if(B > A && B >= C) console.log(`${B} é o maior número`)
+    if(C > A && C > B) console.log(`${C} é o maior número`)
+
+
+9)
+
+
+
+10)
+
+
+
+11)
+
+
+
+12)
+
+
+
+13)
+
+
+
+14)
+
+
+
+15)
+
+
+
+
+
+
