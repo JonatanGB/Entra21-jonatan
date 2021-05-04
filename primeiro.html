@@ -7,16 +7,11 @@
 </head>
 <body>
    <script>
-       let n1 = Number(prompt("insira um número"))
-       let n2 = Number(prompt("insira um número"))
-       let resultado = Boolean(n1 + n2 < 4)
-       resultado == true ? console.log("abaixo") : console.log("acima")
-       /*if (n1 + n2 < 4) {
-            resultado = "Abaixo"
-        } else {
-            resultado = "Acima"
-}*/
-        console.log(resultado)
+
+let n1 = Number(prompt("insira um número para calcular a raiz quadrada"))
+if (n1 > 0) {console.log(`A raiz é ${Math.sqrt(n1)}`)}
+else(console.log("Número inválido"))
+
    </script>
 </body>
 </html>

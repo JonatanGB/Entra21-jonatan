@@ -223,15 +223,25 @@ EXERCICIOS SELEÇÃO
 
 
 9)
-
+    let n1 = Number(prompt("insira um número"))
+    let n2 = Number(prompt("insira um número"))
+    let resultado = Boolean(n1 + n2 < 4)
+    resultado == true ? console.log("abaixo") : console.log("acima")
 
 
 10)
-
+    let lado1 = Number(prompt("insira o primeiro lado de um triângulo"))
+    let lado2 = Number(prompt("insira o segundo lado de um triângulo"))
+    let lado3 = Number(prompt("insira o terceiro lado de um triângulo"))
+    if (lado1 == lado2 && lado1 == lado3) {console.log("é um triângulo equilátero")}
+    else if (lado1 == lado2 || lado2 == lado3 || lado3 == lado1) console.log("É um triângulo isóceles")
+    else console.log("É um triângulo escaleno")
 
 
 11)
-
+    let n1 = Number(prompt("insira um número para calcular a raiz quadrada"))
+    if (n1 > 0) {console.log(`A raiz é ${Math.sqrt(n1)}`)}
+    else(console.log("Número inválido"))
 
 
 12)
