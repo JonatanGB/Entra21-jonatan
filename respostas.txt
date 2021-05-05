@@ -245,11 +245,18 @@ EXERCICIOS SELEÇÃO
 
 
 12)
-
+    let n1 = Number(prompt("insira um número"))
+    let elevado = n1 ** 2
+    let raiz = Math.sqrt(n1)
+    n1 = Boolean(n1 > 0)
+    n1 == true ? console.log(raiz) : console.log(elevado)
 
 
 13)
-
+    let salario = Number(prompt("insira o salário de trabalhador"))
+    let prestação = Number(prompt("insira a prestação de um empréstimo"))
+    if (salario / 5 < prestação) {console.log("empréstimo não concedido")}
+    else(console.log("empréstimo concedido"))
 
 
 14)
