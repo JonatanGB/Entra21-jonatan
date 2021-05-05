@@ -81,7 +81,7 @@ Exercício 12:
     let n1 = Number(prompt("Insira um número"))
     let n2 = Number(prompt("Agora insira outro"))
     let soma = n1 + n2
-    console.log(soma
+    console.log(soma)
 
 
 Exercício 13:
@@ -245,6 +245,12 @@ EXERCICIOS SELEÇÃO
 
 
 12)
+   let n1 = Number(prompt("insira número"))
+   if (n1 % 5 ==0) {console.log("é divisível por 5")}
+   else (console.log("não é divisível por 5"))
+
+
+13)
     let n1 = Number(prompt("insira um número"))
     let elevado = n1 ** 2
     let raiz = Math.sqrt(n1)
@@ -252,21 +258,59 @@ EXERCICIOS SELEÇÃO
     n1 == true ? console.log(raiz) : console.log(elevado)
 
 
-13)
+14)
     let salario = Number(prompt("insira o salário de trabalhador"))
     let prestação = Number(prompt("insira a prestação de um empréstimo"))
     if (salario / 5 < prestação) {console.log("empréstimo não concedido")}
     else(console.log("empréstimo concedido"))
 
 
-14)
-
-
-
 15)
+    let time1 = Number(prompt("insira o número de gols do primeiro time"))
+    let time2 = Number(prompt("insira o número de gols do segundo time"))
+    if(time1 == time2) {console.log("empatou")}
+    else if (time1 < time2) {console.log("o segundo time ganhou")}
+    else (console.log("o primeiro time ganhou"))
+
+
+16)
+    let idade = Number(prompt("Insira sua idade"))
+    if (idade < 16) {console.log("Não precisa votar")}
+    else if (idade >= 18) console.log("Voto obrigatório")
+    else console.log("Voto opcional")
+
+
+17)
+    let n1 = Number(prompt("Insira um número",1))
+    let n2 = Number(prompt("Insira um número",1))
+    let n3 = Number(prompt("Insira um número",1))
+    if (n1 >= n2 && n1 >= n3) {
+        if (n2 >= n3) {console.log(n1, n2, n3)}
+        else (console.log(n1, n3, n2))
+        stop();
+    }   if (n2 > n1 && n2 >= n3) {
+        if (n1 >= n3) {console.log(n2, n1, n3)}
+        else (console.log(n2, n3, n1))
+        stop;
+    } if (n3 > n2 && n3 > n1) {
+        if (n2 >= n1) {console.log(n3, n2, n1)}
+        else (console.log(n3, n1, n2))
+    }
+
+
+18)
 
 
 
+19)
+
+
+
+20)
+
+
+
+21)
 
 
 
