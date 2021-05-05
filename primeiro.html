@@ -8,23 +8,20 @@
 <body>
    <script>
 
-    let n1 = Number(prompt("Insira um número",1))
-    let n2 = Number(prompt("Insira um número",1))
-    let n3 = Number(prompt("Insira um número",1))
-    if (n1 >= n2 && n1 >= n3) {
-        if (n2 >= n3) {console.log(n1, n2, n3)}
-        else (console.log(n1, n3, n2))
-        stop();
-    }   if (n2 > n1 && n2 >= n3) {
-        if (n1 >= n3) {console.log(n2, n1, n3)}
-        else (console.log(n2, n3, n1))
-        stop;
-    } if (n3 > n2 && n3 > n1) {
-        if (n2 >= n1) {console.log(n3, n2, n1)}
-        else (console.log(n3, n1, n2))
-    }
-
-
+        let turno = prompt(`Digite em que turno você estuda\nM-Matutino\nV-Vespertino\nN-Noturno`)
+        switch(turno) {
+            case "M":
+                console.log("Bom dia!")
+                break;
+            case "V":
+                console.log("Boa Tarde!")
+                break;
+            case "N":
+                console.log("Boa Noite")
+                break;
+            default:
+                console.log("Valor inválido!")
+        }
 
    </script>
 </body>
