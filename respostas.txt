@@ -191,10 +191,11 @@ EXERCICIOS SELEÇÃO
 
 
 5)
-    let valorA = Number(prompt("Insira um valor"))
+    let valorA = (prompt("Insira um valor"))
     if (valorA % 2 == 0)
-    console.log(`${valorA} é par`)
-    else(console.log(`${valorA} é impar`))
+        console.log(`${valorA} é par`)
+    else if (valorA % 2 == 1) (console.log(`${valorA} é ímpar`))
+    else(console.log(`${valorA} não é um número`))
     console.log("programa finalizado...")
 
 
@@ -281,17 +282,15 @@ EXERCICIOS SELEÇÃO
 
 
 17)
-    let n1 = Number(prompt("Insira um número",1))
-    let n2 = Number(prompt("Insira um número",1))
-    let n3 = Number(prompt("Insira um número",1))
+    let n1 = Number(prompt("Insira um número"))
+    let n2 = Number(prompt("Insira um número"))
+    let n3 = Number(prompt("Insira um número"))
     if (n1 >= n2 && n1 >= n3) {
         if (n2 >= n3) {console.log(n1, n2, n3)}
         else (console.log(n1, n3, n2))
-        stop();
     }   if (n2 > n1 && n2 >= n3) {
         if (n1 >= n3) {console.log(n2, n1, n3)}
         else (console.log(n2, n3, n1))
-        stop;
     } if (n3 > n2 && n3 > n1) {
         if (n2 >= n1) {console.log(n3, n2, n1)}
         else (console.log(n3, n1, n2))
