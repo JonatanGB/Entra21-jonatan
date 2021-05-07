@@ -244,16 +244,15 @@ EXERCICIOS SELEÇÃO
 
 12)
    let n1 = Number(prompt("insira número"))
-   if (n1 % 5 ==0) {console.log("é divisível por 5")}
+   if (n1 % 5 == 0) {console.log("é divisível por 5")}
    else (console.log("não é divisível por 5"))
 
 
 13)
     let n1 = Number(prompt("insira um número"))
-    let elevado = n1 ** 2
+    let elevado = n1 ** 
     let raiz = Math.sqrt(n1)
-    n1 = Boolean(n1 > 0)
-    n1 == true ? console.log(raiz) : console.log(elevado)
+    n1 > 0 ? console.log(raiz) : console.log(elevado)
 
 
 14)
@@ -274,7 +273,7 @@ EXERCICIOS SELEÇÃO
 16)
     let idade = Number(prompt("Insira sua idade"))
     if (idade < 16) {console.log("Não precisa votar")}
-    else if (idade >= 18) console.log("Voto obrigatório")
+    else if (idade >= 18 && idade < 70) console.log("Voto obrigatório")
     else console.log("Voto opcional")
 
 
@@ -285,13 +284,13 @@ EXERCICIOS SELEÇÃO
     if (n1 >= n2 && n1 >= n3) {
         if (n2 >= n3) {console.log(n1, n2, n3)}
         else (console.log(n1, n3, n2))
-    }   if (n2 > n1 && n2 >= n3) {
+    } if (n2 > n1 && n2 >= n3) {
         if (n1 >= n3) {console.log(n2, n1, n3)}
         else (console.log(n2, n3, n1))
     } if (n3 > n2 && n3 > n1) {
         if (n2 >= n1) {console.log(n3, n2, n1)}
         else (console.log(n3, n1, n2))
-    }
+    } 
 
 
 18)
@@ -377,7 +376,7 @@ EXERCICIOS SELEÇÃO
 
 
 21)
-    let turno = prompt(`Digite em que turno você estuda\nM-Matutino\nV-Vespertino\nN-Noturno`)
+    let turno = prompt(`Digite em que turno você estuda\nM-Matutino\nV-Vespertino\nN-Noturno`).toUpperCase()
     switch(turno) {
         case "M":
             console.log("Bom dia!")
@@ -391,5 +390,4 @@ EXERCICIOS SELEÇÃO
         default:
             console.log("Valor inválido!")
     }
-
 

@@ -1,0 +1,109 @@
+1)
+    A)
+        let i = 0   
+        while(i < 10) {
+            console.log("Olá mundo!")
+            i++
+        }
+    B)
+        let i = 0   
+        do{
+            console.log("Olá mundo!")
+            i++
+        } while(i < 10)
+    c)
+        for(let i = 0; i < 10; i++){
+        console.log("Olá mundo!")
+        }
+
+
+2)
+    A)
+        let i = 0   
+        while(i < 10) {
+            i++
+            console.log(`estou aparecendo pela ${i} na tela`)
+        }
+    B)
+        let i = 0   
+        do{
+            i++
+            console.log(`estou aparecendo pela ${i} na tela`)
+        } while(i < 10)
+    C)
+        for(let i = 0; i < 10; i){
+        console.log(`estou aparecendo pela ${++i} na tela`)
+        }
+        
+
+3)
+    let i = 10
+    while(i > 0){
+        console.log(`${i}`)
+        --i
+    }
+    console.log("Fim!")
+
+
+4)
+    let n1 
+    let n2
+    for(let i = 0; i < 3; i++){
+        n1 = +prompt("Insira um número")
+        n2 = +prompt("Insira outro número")
+        console.log(n1 - n2)
+    }
+
+
+5)
+
+
+6)
+
+
+7)
+
+
+8)
+
+
+9)
+
+
+10)
+
+
+11)
+
+
+12)
+
+
+13)
+
+
+14)
+
+
+15)
+
+
+16)
+
+
+17)
+
+
+18)
+
+
+19)
+
+
+20)
+
+
+
+21)
+
+
