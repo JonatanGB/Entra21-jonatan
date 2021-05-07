@@ -167,13 +167,12 @@ EXERCICIOS SELEÇÃO
 2)
     A) true
     B) true
-    C) erro
-    D) false
+    C) false
+    D) true
     E) true
-    F) true
+    F) false
     G) false
     H) false
-    I) false
 
 
 3)
@@ -185,23 +184,21 @@ EXERCICIOS SELEÇÃO
 
 4)
     let valorA = Number(prompt("Insira um valor"))
-    if (valorA % 2 == 0)
-    console.log(valorA / 2)
+    if (valorA % 2 == 0) {console.log(valorA / 2)}
     console.log("programa finalizado...")
 
 
 5)
     let valorA = (prompt("Insira um valor"))
-    if (valorA % 2 == 0)
-        console.log(`${valorA} é par`)
-    else if (valorA % 2 == 1) (console.log(`${valorA} é ímpar`))
+    if (valorA % 2 == 0) {console.log(`${valorA} é par`)}
+    else if (valorA % 2 == 1) {(console.log(`${valorA} é ímpar`))}
     else(console.log(`${valorA} não é um número`))
     console.log("programa finalizado...")
 
 
 6)
     let n1 = Number(prompt("insira um número")) 
-    if (n1 > 20 && n1 < 90) console.log("está entre 20 e 90")
+    if (n1 > 20 && n1 < 90) {console.log("está entre 20 e 90")}
     else(console.log("Não está entre 20 e 90"))
 
 
@@ -218,9 +215,9 @@ EXERCICIOS SELEÇÃO
     let A = Number(prompt("Insira um número"))
     let B = Number(prompt("Insira um número"))
     let C = Number(prompt("Insira um número"))
-    if (A >= B && A >= C) console.log(`${A} é o maior número`)
-    if (B > A && B >= C) console.log(`${B} é o maior número`)
-    if (C > A && C > B) console.log(`${C} é o maior número`)
+    if (A >= B && A >= C) {console.log(`${A} é o maior número`)}
+    if (B > A && B >= C) {console.log(`${B} é o maior número`)}
+    if (C > A && C > B) {console.log(`${C} é o maior número`)}
 
 
 9)
@@ -235,7 +232,7 @@ EXERCICIOS SELEÇÃO
     let lado2 = Number(prompt("insira o segundo lado de um triângulo"))
     let lado3 = Number(prompt("insira o terceiro lado de um triângulo"))
     if (lado1 == lado2 && lado1 == lado3) {console.log("é um triângulo equilátero")}
-    else if (lado1 == lado2 || lado2 == lado3 || lado3 == lado1) console.log("É um triângulo isóceles")
+    else if (lado1 == lado2 || lado2 == lado3 || lado3 == lado1) {console.log("É um triângulo isóceles")}
     else console.log("É um triângulo escaleno")
 
 
