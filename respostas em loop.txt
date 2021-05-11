@@ -77,15 +77,16 @@
     console.log(`A soma desses números é ${soma}, e a média deles é ${media}`)
 
 
-
 7)
     let n1 = +prompt("Insira um número")    
-    let i = 0
-    n1++
-    while(i < n1){
-        if( i % 2 == 1) console.log(i)
-        i++
+    let i = 1
+    let conjunto = ""
+    while(i <= n1){
+        if(i % 2 == 0 && i != n1) conjunto = conjunto + ", "
+        if( i % 2 == 1) conjunto = conjunto + i 
+        i++  
     }
+    console.log(conjunto)
 
 
 8)
@@ -152,12 +153,15 @@
 
 
 13)
-    let i = 0
+    let i = 1
+    let resultados = ""
     while(i < 15){
-        i++
         let multiplo = 7 * i
-        console.log(multiplo)
+        resultados = resultados + multiplo 
+        if(i < 14) resultados = resultados + ", "
+        i++
     }
+    console.log(resultados)
 
 
 14)
@@ -239,7 +243,6 @@
     console.log(`Resultados:\n${jose_bolinha} voto(s) para José Bolinha\n${maria_nascimento} voto(s) para Maria Nascimento\n${joao_da_silva} voto(s) para João da Silva\n${nulo} voto(s) nulos\n${branco} voto(s) em branco`)
 
 
-
 18)
     let i = 0
     while(i < 4){  
@@ -269,7 +272,6 @@
     }
 
 
-
 20)
     let i
     let m
@@ -296,5 +298,31 @@
 
 
 21)
+    let primos = ""
+    let divi = ""
+    let cal = 1
+        for(let i = 0; i < 72; i++){
+            if(i == 2 || i == 3 || i == 5 || i == 7 ) primos = primos + i + " "
+            else {
+                if(i % 3 == 0 || i % 2 == 0 || i % 5 == 0  || i % 7 == 0 || i == 1 ) continue
+                primos = primos + i + " "
+            }
+        }
+    console.log(primos)
 
 
+fracasso total parcial
+        let primos = ""
+        let divi = ""
+        let cal = +prompt("")
+            for(let j = 0; j < 20; j++){
+                for(let i = 0; i < cal; i++){
+                if(cal % i == 0) divi = divi + i + " "
+                }
+            if(divi.length <= 4 && divi.length >= 2 ) primos = primos + cal + " "
+            cal--
+            i = 0
+            }
+        
+
+        console.log(primos)

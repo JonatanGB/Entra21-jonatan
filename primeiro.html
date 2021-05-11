@@ -7,11 +7,22 @@
 </head>
 <body>
    <script>
-    let i = 0
-    while(i < 20){
+        let primos = ""
+        let divi = ""
+        let cal = +prompt("")
+            for(let j = 0; j < 20; j++){
+                for(let i = 0; i < cal; i++){
+                if(cal % i == 0) divi = divi + i + " "
+                }
+            if(divi.length <= 4 && divi.length >= 2 ) primos = primos + cal + " "
+            cal--
+            i = 0
+            }
         
-        i++
-    }
-   </script>
+
+        console.log(primos)
+
+
+    </script>
 </body>
 </html>
