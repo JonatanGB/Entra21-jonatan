@@ -1,0 +1,102 @@
+1)
+
+
+
+2)
+    let vetor = []
+    let maior = 0
+    let posição 
+    for(let i = 0; i < 5; i++){
+        vetor[i] = +prompt(`digite o ${i + 1}º valor`)
+        if(maior < vetor[i]) {
+            maior = vetor[i]
+            posição = i 
+        }
+    }
+    console.log(`${vetor}\nMaior elemento: ${maior}\nPosição do maior elemento: ${posição}`)
+
+
+3)
+    let vetor = []
+    for(let i = 0; i < 5; i++){
+        vetor[i] = +prompt(`digite o ${i + 1}º valor`)
+    }
+    let maior = vetor[0]
+    let menor = vetor[0]
+    
+    for(let i = 0; i < 5; i++){
+        if(maior < vetor[i]) maior = vetor[i]
+        if(menor > vetor[i]) menor = vetor[i]
+    }
+    console.log(`${vetor}\nMaior elemento: ${maior}\nMenor elemento: ${menor}`)
+
+
+4)
+
+
+
+5)
+
+
+
+6)
+
+
+
+7)
+
+
+8)
+
+
+
+9)
+
+
+
+10)
+
+
+
+12)
+
+
+
+13)
+
+
+
+14)
+
+
+
+15)
+
+
+
+16)
+
+
+
+17)
+
+
+
+18)
+
+
+
+19)
+
+
+
+20)
+
+
+
+21)
+
+
+
+
+

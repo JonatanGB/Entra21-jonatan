@@ -6,22 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-   <script>
-        let primos = ""
-        let divi = ""
-        let cal = +prompt("")
-            for(let j = 0; j < 20; j++){
-                for(let i = 0; i < cal; i++){
-                if(cal % i == 0) divi = divi + i + " "
-                }
-            if(divi.length <= 4 && divi.length >= 2 ) primos = primos + cal + " "
-            cal--
-            i = 0
-            }
-        
+    <script>
 
-        console.log(primos)
-
+        let numeros = []
+        let rotev = []
+        for(let i = 0; i < 5; i++){
+            numeros[i] = +prompt(`digite o ${i + 1}º valor`)
+        }
+        for (let i = numeros.length - 1; i >= 0; i--) {
+            console.log(numeros[i])
+        }
+           // console.log(vetor.reverse())
 
     </script>
 </body>

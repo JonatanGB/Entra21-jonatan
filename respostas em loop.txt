@@ -22,17 +22,17 @@
         let i = 0   
         while(i < 10) {
             i++
-            console.log(`estou aparecendo pela ${i} na tela`)
+            console.log(`estou aparecendo pela ${i}º na tela`)
         }
     B)
         let i = 0   
         do{
             i++
-            console.log(`estou aparecendo pela ${i} na tela`)
+            console.log(`estou aparecendo pela ${i}º na tela`)
         } while(i < 10)
     C)
         for(let i = 0; i < 10; i){
-        console.log(`estou aparecendo pela ${++i} na tela`)
+        console.log(`estou aparecendo pela ${++i}º na tela`)
         }
         
 
@@ -51,7 +51,7 @@
     for(let i = 0; i < 3; i++){
         n1 = +prompt("Insira um número")
         n2 = +prompt("Insira outro número")
-        console.log(n1 - n2)
+        console.log(`${n1} - ${n2} = ${n1 - n2}`)
     }
 
 
@@ -268,7 +268,7 @@
         let nota3 = +prompt("insira terceira nota do aluno")
 
         let media = (nota1 + nota2 + nota3) / 3
-        console.log(`A média do aluno com a matricula ${aluno} é ${media}`)
+        console.log(`A média do aluno com a matricula ${aluno} é ${media.toFixed(2)`)
     }
 
 
@@ -299,8 +299,6 @@
 
 21)
     let primos = ""
-    let divi = ""
-    let cal = 1
         for(let i = 0; i < 72; i++){
             if(i == 2 || i == 3 || i == 5 || i == 7 ) primos = primos + i + " "
             else {
@@ -323,6 +321,6 @@ fracasso total parcial
             cal--
             i = 0
             }
-        
-
         console.log(primos)
+
+:3
