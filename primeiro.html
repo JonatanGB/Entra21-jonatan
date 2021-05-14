@@ -8,16 +8,26 @@
 <body>
     <script>
 
-        let numeros = []
-        let rotev = []
-        for(let i = 0; i < 5; i++){
-            numeros[i] = +prompt(`digite o ${i + 1}º valor`)
-        }
-        for (let i = numeros.length - 1; i >= 0; i--) {
-            console.log(numeros[i])
-        }
-           // console.log(vetor.reverse())
+        let vetor = []
+        vetor[0] = +prompt("Insira um valor")
+        let maior = vetor[0]
+        let menor  = vetor[0]
+        let maiorP = 0
+        let menorP = 0
 
+        for(let i = 1; i < 5; i++){
+            vetor[i] = +prompt("Insira um valor")
+            if(vetor[i] > maior) {
+                maior = vetor[i]
+                maiorP = i
+            }
+            else if(vetor[i] < menor){
+                menor = vetor[i]
+                menorP = i
+            }
+        }
+
+        console.log(`O maior é ${maior}, na posição ${maiorP}\nO menor é ${menor}, na posição ${menorP}`)
     </script>
 </body>
 </html>

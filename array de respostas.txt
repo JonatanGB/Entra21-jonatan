@@ -32,30 +32,133 @@
 
 
 4)
-
+    let numeros = []
+    let vetor = []
+    for(let i = 0; i < 5; i++){
+        numeros[i] = +prompt(`digite o ${i + 1}º valor`)
+    }
+    for (let i = numeros.length - 1; i >= 0; i--) {
+        vetor = vetor + numeros[i] + ""
+    }
+    let rotev = vetor.split("") 
+    //console.log(vetor.reverse())
+    console.log(`Original: ${numeros}\nInvertido: ${rotev}`)
 
 
 5)
-
+    let nomes = []
+    for(i = 0; i < 5; i++){
+        nomes[i] = prompt(`Insira o nome da ${i + 1}ª pessoa`).toUpperCase()
+    }
+    let nome = prompt("Insira um nome").toUpperCase()
+    let achei
+    for (let i = 0; i <= nomes.length; i++) {
+            if(nome == nomes[i]) achei = true
+    }
+    if(achei == true) console.log("ACHEI!!")
+    else(console.log("não achei :("))
 
 
 6)
-
+    let A = [1, 0, 5, -2, -5, 7]
+    let soma = A[0] + A[1] + A[5]
+    console.log(soma)
+    A[4] = 100
+    for(let i = 0; i < 6; i++){
+        console.log(A[i])
+    }
 
 
 7)
+    let vetor = []
+    let quadrado = []
+    for(let i = 0; i < 5; i++)[
+        vetor[i] = +prompt("insira um número")
+    ]
+    for(let i = 0; i < 5; i++)
+        quadrado[i] = vetor[i] ** 2
+    console.log(`${vetor} ao quadrado é ${quadrado}`)
+
 
 
 8)
-
+    let vetor = []
+    let j = 0
+    let rotev = []
+    for(let i = 0; i < 6; i++){
+        for(let j = 0; j => 0; j++){
+            vetor[i] = +prompt("Insira um valor par")
+            if(vetor[i] % 2 == 0) break
+        }
+    }
+    //console.log(vetor.reverse())
+    for(let i = 5; i >= 0; i--){
+        rotev[j] = vetor[i]
+        j++
+    }
+    console.log(rotev)
 
 
 9)
+    let vetor = []
+    let j = 0
+    let rotev = []
+    for(let i = 0; i < 8; i++){
+        vetor[i] = +prompt("Insira um valor")
+    }
+    let X 
+    let y 
+    while(true){
+        X = +prompt("insira a posição de um valor desse vetor")
+        if(X >= 0 && X <= 7) break
+        alert("Insira um valor valido")
+    }
+    while(true){
+        Y = +prompt("insira a posição de um valor desse vetor")
+        if(Y >= 0 && Y <= 7) break
+        alert("Insira um valor valido")
+    }
 
+    let soma = vetor[X] + vetor[Y]
+    console.log(soma)
 
 
 10)
+    let vetor = []
+    let pares = 0
+    let imapares = 0
+    for(let i = 0; i < 10; i++){
+        vetor[i] = +prompt("Insira um valor")
+    }
+    for(let i = 0; i < 10; i++){
+        if(vetor[i] % 2 == 0) pares += vetor[i]
+        else{imapares++}
+    }
+    console.log(`${imapares} números digitados eram ímpares, e a soma dos números pares é ${pares}`)
 
+
+
+11)
+    let vetor = []
+    vetor[0] = +prompt("Insira um valor")
+    let maior = vetor[0]
+    let menor  = vetor[0]
+    let maiorP = 0
+    let menorP = 0
+
+    for(let i = 1; i < 5; i++){
+        vetor[i] = +prompt("Insira um valor")
+        if(vetor[i] > maior) {
+            maior = vetor[i]
+            maiorP = i
+        }
+        else if(vetor[i] < menor){
+            menor = vetor[i]
+            menorP = i
+        }
+    }
+
+    console.log(`O maior é ${maior}, na posição ${maiorP}\nO menor é ${menor}, na posição ${menorP}`)
 
 
 12)
@@ -79,7 +182,25 @@
 
 
 17)
-
+    let vetor = []
+    let ram = 0
+    let menor = 100
+    let organizado = [100, 100, 100, 100, 100, 100, 100, 100, 100, 100]
+    let posição = 0
+    for(let i = 0; i < 10; i++){
+        ram = (Math.random()* 10).toFixed(0)
+        vetor[i] = ram
+    }
+    for(let i = 0; i < 10; i++){
+        for(let j = 0; j < 10; j++){
+            if(organizado[j] > vetor[i]){
+                organizado[j] = vetor[i]
+                posição = j
+            }
+        }
+        vetor[posição] = 100
+    }
+    console.log(organizado)
 
 
 18)
