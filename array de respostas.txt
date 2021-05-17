@@ -80,7 +80,6 @@
     console.log(`${vetor} ao quadrado é ${quadrado}`)
 
 
-
 8)
     let vetor = []
     let j = 0
@@ -137,7 +136,6 @@
     console.log(`${imapares} números digitados eram ímpares, e a soma dos números pares é ${pares}`)
 
 
-
 11)
     let vetor = []
     vetor[0] = +prompt("Insira um valor")
@@ -162,61 +160,194 @@
 
 
 12)
+    function getRandomIntInclusive(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;}
 
+    let um = 0
+    let dois = 0
+    let tres = 0
+    let quatro = 0
+    let cinco = 0
+    let seis = 0
+    for( let i = 0; i < 100; i++){
+        let ram = getRandomIntInclusive(1, 6)
+        switch(ram){
+            case 1:
+                um++
+                break
+            case 2:
+                dois++
+                break
+            case 3:
+                tres++
+                break
+            case 4:
+                quatro++
+                break
+            case 5:
+                cinco++
+                break
+            case 6:
+                seis++
+                break
+        }
+    }
+    console.log(`1: ${um} vezes\n2: ${dois} vezes\n3: ${tres} vezes\n4: ${quatro} vezes\n5: ${cinco} vezes\n6: ${seis} vezes\n`)
 
 
 13)
-
+    let vetor = []
+    let i = 0
+    let soma = 0
+    let media = 0
+    let maior = 0
+    while(true){
+        vetor[i] = +prompt(`Insira a ${i + 1}ª nota`)
+        if(vetor[i] < 0) break
+        if(vetor[i] > maior) maior = vetor[i]
+        soma += vetor[i]
+        i++   
+    }
+        media = soma / i
+    console.log(`A média da turma é ${media}, e a maior nota foi ${maior}`)
 
 
 14)
-
+    let vetor1 = []
+    let vetor2 = []
+    let saoIguais = false
+    for(let i = 0; i < 5; i++){
+        vetor1[i] = +prompt(`Insira a ${i + 1}º valor do primeiro vetor`)
+    }
+    for(let i = 0; i < 5; i++){
+        vetor2[i] = +prompt(`Insira a ${i + 1}º valor do segundo vetor`)
+    }
+    for(let i = 0; i < 5; i++){
+        if(vetor2[i] == vetor1[i]) saoIguais = true
+        else{
+            saoIguais = false
+            break
+        }
+    }
+    if(saoIguais == true) console.log("Os vetores são iguais")
+    else(console.log("Os vetores não são iguais"))
 
 
 15)
-
+    let vetor1 = []
+    let vetor2 = []
+    let interceccoes = []
+    let ka = 0
+    for(let i = 0; i < 5; i++){
+        vetor1[i] = prompt(`Insira o ${i + 1}º valor do primeiro vetor`)
+    }
+    for(let i = 0; i < 5; i++){
+        vetor2[i] = prompt(`Insira o ${i + 1}º valor do segundo vetor`)
+    }
+    for(let i = 0; i < 5; i++){
+        for(let j = 0; j < 5; j++){
+            if(vetor1[i] === vetor2[j]) {
+                interceccoes[ka] = vetor2[j]
+                ka++
+                }
+        }
+    }
+    console.log(`Vetor 1: ${vetor1} \nVetor 2: ${vetor2} \nIntercecções: ${interceccoes}`)
 
 
 16)
-
+        let n1 = +prompt("insira um numero") 
+        let n2 = +prompt("insira um numero") 
+        let vetor = []
+        let k = 0
+        for(let i = n1; i <= n2; i += 2){
+            vetor[k] = i
+            k++
+        }
+        console.log(vetor)
 
 
 17)
+
+
+
+18)
     let vetor = []
     let ram = 0
-    let menor = 100
-    let organizado = [100, 100, 100, 100, 100, 100, 100, 100, 100, 100]
-    let posição = 0
+    let posicaoMaior
+    let pares = 0
+    let impares = 1
     for(let i = 0; i < 10; i++){
         ram = (Math.random()* 10).toFixed(0)
         vetor[i] = ram
     }
     for(let i = 0; i < 10; i++){
-        for(let j = 0; j < 10; j++){
-            if(organizado[j] > vetor[i]){
-                organizado[j] = vetor[i]
-                posição = j
-            }
-        }
-        vetor[posição] = 100
+        if(vetor[i] % 2 == 0) pares = pares + Number(vetor[i])
+        else impares = impares * vetor[i]
     }
-    console.log(organizado)
-
-
-18)
-
+    console.log(`Vetor: ${vetor} \nSoma dos pares: ${pares} \nMultipliação dos ímpares: ${impares}`)
 
 
 19)
-
+    let poema = "Sem trocar que o espinho é seco.\n Sem trocar que seco é ser sol.\n Sem trocar que algum espinho seco secará."
+    console.log(poema)
+    let vetor = []
+    let poemaS = poema.split(" ")
+    for(let i = 0; i < poemaS.length; i++){
+        if(poemaS[i] === "trocar") poemaS[i] = "sacar"
+    }
+    poema = poemaS.join(" ")
+    console.log(poema)
 
 
 20)
-
+    let notas = []
+    let acimaMedia = []
+    let k = 0
+    for(let i = 0; i < 10; i++){
+        notas[i] = +prompt(`Insira a ${i + 1}ª nota`)
+    }
+    let media = 0
+    for(let i = 0; i < 10; i++){
+        media += Number(notas[i])
+    }
+    media = media / 10
+    for(let i = 0; i <10; i++){
+        if(notas[i] > media) {
+            acimaMedia[k] = notas[i]
+            k++
+        }
+    }
+    console.log(`Notas que estão acima da média: ${acimaMedia}`)
 
 
 21)
-
+    let produtos = []
+    let precos = []
+    let menor50 = 0
+    let meio = []
+        k = 0
+        media = 0
+        quantos = 0
+    for(let i = 0; i < 5; i++){
+        produtos[i] = prompt("Insira um produto")
+        precos[i] = +prompt("Insira o valor do produto")
+    }
+    for(let i = 0; i < 5; i++){
+        if(Number(precos[i]) < 50) menor50++
+        if(precos[i] >= 50 && precos[i] <= 100){
+            meio[k] = produtos[i]
+            k++
+        }
+        if(precos[i] > 100){
+            media += Number(precos[i])
+            quantos++
+        }
+    }
+    media = media / quantos
+    console.log(`Menores de 50: ${menor50} \nEntre 50 e 100: ${meio} \nMaior que 100: ${media}`)
 
 
 

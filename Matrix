@@ -1,0 +1,155 @@
+1)
+
+
+
+2)
+    let matriz = []
+    for (let i = 0; i < 5; i++) {
+        matriz[i] = []
+        for (let j = 0; j < 5; j++) {
+            matriz[i][j] = 0
+            if(i == j) matriz[i][j] = 1
+        }
+    }
+    let mostrandoMatriz = ""
+    for (let i = 0; i < 5; i++) {
+        for (let j = 0; j < 5; j++) {
+            mostrandoMatriz += matriz[i][j] + "\t"
+        }
+        mostrandoMatriz += "\n"
+    }
+    console.log(mostrandoMatriz)
+
+
+3)
+
+
+
+4)
+    let maiores = []
+    let matriz = []
+    for (let i = 0; i < 3; i++) {
+        matriz[i] = []
+        for (let j = 0; j < 3; j++) {
+            matriz[i][j] = +prompt("Insira um valor para a primeira matriz")
+        }
+    }    
+    let matriz2 = []
+    for (let i = 0; i < 3; i++) {
+        matriz2[i] = []
+        for (let j = 0; j < 3; j++) {
+            matriz2[i][j] = +prompt("Insira um valor para a segunda matriz")
+        }
+    }
+    for(let i = 0; i < 3; i++){
+        maiores[i] = []
+        for(let j = 0; j < 3; j++){
+            if(matriz[i][j] > matriz2[i][j]) maiores[i][j] = matriz[i][j]
+            else(maiores[i][j] = matriz2[i][j])
+        }
+
+    }
+
+    let mostrandoMatriz = ""
+    for (let i = 0; i < 3; i++) {
+        for (let j = 0; j < 3; j++) {
+            mostrandoMatriz += maiores[i][j] + "\t"
+        }
+        mostrandoMatriz += "\n"
+    }
+    console.log(mostrandoMatriz)
+
+
+5)
+    let matriz = []
+    let soma = 0
+    for (let i = 0; i < 3; i++) {
+        matriz[i] = []
+        for (let j = 0; j < 3; j++) {
+            matriz[i][j] = +prompt("Insira um valor para a primeira matriz")
+        }
+    }
+
+    for(let i = 0; i < 3; i++){
+        for(let j = 0; j < 3; j++){
+            if(j > i) soma += Number(matriz[i][j])
+        }
+    }
+
+    let mostrandoMatriz = ""
+    for (let i = 0; i < 3; i++) {
+        for (let j = 0; j < 3; j++) {
+            mostrandoMatriz += matriz[i][j] + "\t"
+        }
+        mostrandoMatriz += "\n"
+    }
+    console.log(mostrandoMatriz)
+    console.log(soma)
+
+
+6)
+
+
+
+7)
+
+
+
+8)
+
+
+
+9)
+
+
+
+10)
+
+
+
+11)
+
+
+
+12)
+
+
+
+13)
+
+
+
+14)
+
+
+
+15)
+
+
+
+16)
+
+
+
+17)
+
+
+
+18)
+
+
+
+19)
+
+
+
+20)
+
+
+
+21)
+
+
+
+
+

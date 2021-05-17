@@ -8,26 +8,33 @@
 <body>
     <script>
 
-        let vetor = []
-        vetor[0] = +prompt("Insira um valor")
-        let maior = vetor[0]
-        let menor  = vetor[0]
-        let maiorP = 0
-        let menorP = 0
-
-        for(let i = 1; i < 5; i++){
-            vetor[i] = +prompt("Insira um valor")
-            if(vetor[i] > maior) {
-                maior = vetor[i]
-                maiorP = i
-            }
-            else if(vetor[i] < menor){
-                menor = vetor[i]
-                menorP = i
-            }
+    let matriz = []
+    let media = 0
+    for (let i = 0; i < 3; i++) {
+        matriz[i] = []
+        for (let j = 0; j < 4; j++) {
+            if(j === 0) matriz[i][j] = prompt("Insira o nome do aluno")
+            else(matriz[i][j] = +prompt("Insira um valor para a primeira matriz"))
         }
-
-        console.log(`O maior é ${maior}, na posição ${maiorP}\nO menor é ${menor}, na posição ${menorP}`)
+    }
+    for (let i = 0; i < 3; i++) {
+        for (let j = 1; j < 4; j++) {
+            media = media + Number(matriz[i][j])
+        }
+        media = media / 3
+        matriz[i][4] = media
+        media = 0
+    }
+    for(let i = 0; i < 3; i++){
+        if(matriz[i][4] >= 6) matriz[i][5] = "Aprovado"
+        else(matriz[i][5] = "Reprovado")
+    }
+    let mostrando = ""
+    for(let i = 0; i < 3; i++){
+        for(let j = 0; j < 5; j++){
+            mostrando += matriz[i][i] + "\t"
+        }
+    }
     </script>
 </body>
 </html>
