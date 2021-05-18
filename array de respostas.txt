@@ -108,7 +108,6 @@
 9)
     let vetor = []
     let j = 0
-    let rotev = []
     for(let i = 0; i < 8; i++){
         vetor[i] = +prompt("Insira um valor")
     }
@@ -131,16 +130,16 @@
 
 10)
     let vetor = []
-    let pares = 0
-    let imapares = 0
+    let positivos = 0
+    let negativos = 0
     for(let i = 0; i < 10; i++){
         vetor[i] = +prompt("Insira um valor")
     }
     for(let i = 0; i < 10; i++){
-        if(vetor[i] % 2 == 0) pares += vetor[i]
-        else{imapares++}
+        if(vetor[i] < 0) negativos++
+        else{positivos += vetor[i]}
     }
-    console.log(`${imapares} números digitados eram ímpares, e a soma dos números pares é ${pares}`)
+    console.log(`${negativos} números digitados eram negativos, e a soma dos números positivos é ${positivos}`)
 
 
 11)
@@ -284,6 +283,7 @@
     for(let i = 0; i < 10; i++){
         matriz[i] = ((Math.random()) * 10).toFixed()
     }
+    let clone = matriz.slice(0,10)
     console.log(`Array original:`)
     console.log(matriz)
     for(let j = 9; j >= 0; j--){
@@ -365,11 +365,11 @@
     }
     for(let i = 0; i < 5; i++){
         if(Number(precos[i]) < 50) menor50++
-        if(precos[i] >= 50 && precos[i] <= 100){
+        else if(precos[i] <= 100){
             meio[k] = produtos[i]
             k++
         }
-        if(precos[i] > 100){
+        else{
             media += Number(precos[i])
             quantos++
         }

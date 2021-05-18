@@ -8,7 +8,6 @@
 <body>
     <script>
 
-
     let matriz = []
     let organizado = []
     let maior = -1
@@ -16,6 +15,7 @@
     for(let i = 0; i < 10; i++){
         matriz[i] = ((Math.random()) * 10).toFixed()
     }
+    let clone = matriz.slice(0,10)
     console.log(`Array original:`)
     console.log(matriz)
     for(let j = 9; j >= 0; j--){
