@@ -8,33 +8,30 @@
 <body>
     <script>
 
+
     let matriz = []
-    let media = 0
-    for (let i = 0; i < 3; i++) {
-        matriz[i] = []
-        for (let j = 0; j < 4; j++) {
-            if(j === 0) matriz[i][j] = prompt("Insira o nome do aluno")
-            else(matriz[i][j] = +prompt("Insira um valor para a primeira matriz"))
+    let organizado = []
+    let maior = -1
+    let posicao 
+    for(let i = 0; i < 10; i++){
+        matriz[i] = ((Math.random()) * 10).toFixed()
+    }
+    console.log(`Array original:`)
+    console.log(matriz)
+    for(let j = 9; j >= 0; j--){
+        for(let i = 0; i < 10; i++){
+            if(Number(matriz[i]) > maior){ 
+                maior = matriz[i]
+                posicao = i
+                }
         }
+        organizado[j] = maior 
+        matriz[posicao] = -1
+        maior = -1
     }
-    for (let i = 0; i < 3; i++) {
-        for (let j = 1; j < 4; j++) {
-            media = media + Number(matriz[i][j])
-        }
-        media = media / 3
-        matriz[i][4] = media
-        media = 0
-    }
-    for(let i = 0; i < 3; i++){
-        if(matriz[i][4] >= 6) matriz[i][5] = "Aprovado"
-        else(matriz[i][5] = "Reprovado")
-    }
-    let mostrando = ""
-    for(let i = 0; i < 3; i++){
-        for(let j = 0; j < 5; j++){
-            mostrando += matriz[i][i] + "\t"
-        }
-    }
+    console.log(`\nArray organizado:`)
+    console.log(organizado)
+
     </script>
 </body>
 </html>

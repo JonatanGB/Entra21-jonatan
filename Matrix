@@ -1,5 +1,14 @@
 1)
-
+    let matriz = []
+    let maior10 = 0
+    for(let i = 0; i < 3; i++){
+        matriz[i] = []
+        for(let j = 0; j < 3; j++){
+            matriz[i][j] = +prompt("insira um valor")
+            if(matriz[i][j] > 10) maior10++
+        }
+    }
+    console.log(`A quantidade de elementos digitados que são maiores que 10 é: ${maior10}`)
 
 
 2)
@@ -22,7 +31,37 @@
 
 
 3)
+    let matriz = []
+    let achei = false
+    for(let i = 0; i < 3; i++){
+        matriz[i] = []
+        for(let j = 0; j < 3; j++){
+            matriz[i][j] = +prompt("insira um valor")
+        }
+    }
+    let mostrandoMatriz = ""
+    for (let i = 0; i < 3; i++) {
+        for (let j = 0; j < 3; j++) {
+            mostrandoMatriz += matriz[i][j] + "\t"
+        }
+        mostrandoMatriz += "\n"
+    }
+    console.log(mostrandoMatriz)
 
+    let X = +prompt("Insira um valor para procurar dentro da matriz")
+        coluna = 0
+        linha = 0
+    procurando:
+    for(let i = 0; i < 3; i++){
+        for(let j = 0; j < 3; j++){
+            if(matriz[i][j] == X){
+                console.log(`Está na linha ${i} e coluna ${j}`)
+                achei = true
+                break procurando
+            }
+        }
+    }
+    if(achei == false) console.log("Não encontrado")
 
 
 4)
@@ -88,8 +127,38 @@
 
 
 6)
+    let matriz = []
+    let media = 0
+    for (let i = 0; i < 3; i++) {
+        matriz[i] = []
+        for (let j = 0; j < 4; j++) {
+            if(j === 0) matriz[i][j] = prompt("Insira o nome do aluno")
+            else(matriz[i][j] = +prompt("Insira a nota dele"))
+        }
+    }
 
+    for (let i = 0; i < 3; i++) {
+        for (let j = 1; j < 4; j++) {
+            media += Number(matriz[i][j])
+        }
+        media = media / 3
+        matriz[i].push(media)
+        media = 0
+    }
 
+    for(let i = 0; i < 3; i++){
+        if(matriz[i][4] >= 6) matriz[i].push("Aprovado")
+        else(matriz[i].push("Reprovado"))
+    }
+
+    let mostrando = ""
+    for(let i = 0; i < 3; i++){
+        for(let j = 0; j < 6; j++){
+            mostrando += matriz[i][j] + "\t"
+        }
+        mostrando += "\n"
+    }
+    console.log(mostrando)
 
 7)
 
