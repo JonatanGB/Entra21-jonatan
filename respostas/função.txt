@@ -1,0 +1,189 @@
+1)
+    function ehPositivo(n1) {
+        if(n1 > 0) return true
+        return false
+    }
+    let n1 = +prompt("Insira um número")
+    console.log(ehPositivo(n1))
+
+
+2)
+
+
+
+3)
+    function ehPositivo(A, B) {
+        return A ** B
+    }
+    let A = +prompt("Insira um número")
+    let B = +prompt("insirs um número")
+    console.log(ehPositivo(A, B))
+
+
+
+4)
+    function media(A, B, C) {
+        return (A + B + C) / 3
+    }
+    let A = +prompt("Insira um número")
+    let B = +prompt("insirs um número")
+    let C = +prompt("insirs um número")
+    console.log(media(A, B, C))
+
+
+5)
+    function conceito(madia) {
+        if(madia >= 0 && madia < 5)return "D"
+        if(madia < 7)return "C"
+        if(madia < 9)return "B"
+        return "A"
+    }
+    let media = +prompt("Insira a média")
+    console.log(conceito(media))
+
+
+6)
+    function pesoIdeal(G, A) {
+        if(G === "M")return 72.7 * A-58
+        if(G === "F")return 62.1 * A-44.7
+    }
+    let genero = prompt("Insira seu sexo\nM - Masculino\nF - Feminino").toUpperCase()
+    let altura = prompt("Insira sua altura")
+    console.log(pesoIdeal(genero, altura
+
+
+7)
+    function extremidades(array) {
+        return [array[0], array[array.length - 1]]
+    }
+    let array = [1, 2, 3, 4, 5, 6]
+    let array2 = extremidades(array)
+    console.log(array2)
+
+
+8)
+    function tags(N) {
+        let S = ""
+        for(let i = 0; i < N; i++){
+            S += "#"
+        }
+        return S
+    }
+    let n1 = +prompt("insira um número")
+    console.log(tags(n1))
+
+
+9)
+    function ficarRepetindo(S, N) {
+        let repetição = []
+        for(let i = 0; i < N; i++){
+            repetição[i] = S
+        }
+        return repetição
+    }
+    let mensagem = prompt("Insira a mensagem a ser repetida")
+    let n1 = +prompt("insira o numero de repetições")
+    console.log(ficarRepetindo(mensagem, n1)
+
+
+10)
+    function idade(ano) {
+        return 2021 - ano
+    }
+    let anoNascimento = +prompt("insira o seu ano de nascimento")
+    console.log(idade(anoNascimento))
+
+
+11)
+    function modificador(A) {
+        let modificado = A
+        modificado[1] = 10
+        modificado[2] = 30
+        return modificado
+    }
+    let array = [] 
+    for(let i = 0; i < 5; i++){
+        array[i] = +prompt("Insira um valor")
+    }
+    console.log(`array original: \n${array}\n\narray modificado: \n${modificador(array)}`)
+
+
+12)
+    function maiorEmonor(){
+        let maior = -1
+        let menor = 1001
+        let ram
+        for(let i = 0; i < 50; i++){
+            ram = ((Math.random())*1000).toFixed()
+            if(ram > maior) maior = ram
+            if(ram < menor) menor = ram
+    }
+    return `O maior é ${maior} e o menor é ${menor}`
+    }
+    console.log(maiorEmonor())
+
+
+13)
+    function idadeDias(D, M, A){
+        return D + M * 30 + A * 365
+    }
+    let idadeD = +prompt("insira a quantidade de dias")
+    let idadeM = +prompt("insira a quantidade de meses")
+    let idadeA = +prompt("insira a quantidade de anos")
+    console.log(idadeDias(idadeD, idadeM, idadeA))
+
+
+14)
+    function calcularDivisores(A){
+        let divisores = []
+        let k = 0
+        for(let i = 1; i <= A; i++){
+            if(A % i == 0){
+                divisores[k] = i
+                k++
+            }
+        }
+        return divisores 
+    }
+    let valor = +prompt("insira um valor")
+    console.log(calcularDivisores(valor))
+
+
+15)
+    function calcularFatorial(N){
+        let fatorial = 1
+        for(let i = 1; i <= N; i++){
+            fatorial = fatorial * i
+        }
+        return `O fatorial de ${N} é ${fatorial}`
+    }
+    let valor = +prompt("Insira um número para calcular o fatorial")
+    console.log(calcularFatorial(valor))
+
+
+16)
+
+
+
+17)
+
+
+
+18)
+
+
+
+19)
+
+
+
+20)
+
+
+
+21)
+
+
+
+
+

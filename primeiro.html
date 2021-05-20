@@ -7,16 +7,31 @@
 </head>
 <body>
     <script>
+
         "use strict"
 
-        function ehPositivo(n1) {
-            if(n1 >= 0) return true
+        function calcularDivisores(A){
+            let divisores = []
+            let k = 0
+            for(let i = 1; i <= A; i++){
+                if(A % i == 0){
+                    divisores[k] = i
+                    k++
+                }
+            }
+            return(divisores)
+        }
+
+        function ehPerfeito(D, A){
+            let soma = 0
+            for(let i = 0; i < D.lenght - 1; i++){
+                soma += D[i]
+            }
+            if(soma == A) return true
             return false
         }
-        let n1 = +prompt("Insira um número")
-        let positivo = ehPositivo(n1)
-        if (positivo == true) console.log(`${n1} é positivo`)
-        else(console.log(`${n1} é negativo`))
+        let valor = +prompt("Insira um valor para ver se ele é perfeito")
+        console.log(ehPerfeito)
 
     </script>
 </body>
