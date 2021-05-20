@@ -7,30 +7,16 @@
 </head>
 <body>
     <script>
+        "use strict"
 
-    let matriz = []
-    let organizado = []
-    let maior = -1
-    let posicao 
-    for(let i = 0; i < 10; i++){
-        matriz[i] = ((Math.random()) * 10).toFixed()
-    }
-    let clone = matriz.slice(0,10)
-    console.log(`Array original:`)
-    console.log(matriz)
-    for(let j = 9; j >= 0; j--){
-        for(let i = 0; i < 10; i++){
-            if(Number(matriz[i]) > maior){ 
-                maior = matriz[i]
-                posicao = i
-                }
+        function ehPositivo(n1) {
+            if(n1 >= 0) return true
+            return false
         }
-        organizado[j] = maior 
-        matriz[posicao] = -1
-        maior = -1
-    }
-    console.log(`\nArray organizado:`)
-    console.log(organizado)
+        let n1 = +prompt("Insira um número")
+        let positivo = ehPositivo(n1)
+        if (positivo == true) console.log(`${n1} é positivo`)
+        else(console.log(`${n1} é negativo`))
 
     </script>
 </body>
