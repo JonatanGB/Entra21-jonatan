@@ -8,7 +8,14 @@
 
 
 2)
-
+    function escolheMaior(A, B){
+        if(A > B) console.log(`${A} é maior`)
+        else if(A == B) console.log("Os dois são iguais")
+        else(console.log(`${B} é maior`))
+    }
+    let a = prompt("Insira o primeiro valor")
+    let b = prompt("Insira o segundo valor")
+    escolheMaior(a, b)
 
 
 3)
@@ -18,7 +25,6 @@
     let A = +prompt("Insira um número")
     let B = +prompt("insirs um número")
     console.log(ehPositivo(A, B))
-
 
 
 4)
@@ -162,28 +168,104 @@
 
 
 16)
+    function calcularDivisores(valor){
+        let divisores = []
+        let k = 0
+        for(let i = 1; i < valor; i++){
+            if(valor % i == 0){
+                divisores[k] = i
+                k++
+            }
+        }
+        return(divisores)
+    }
 
+    function ehPerfeito(divisores, valor){
+        let soma = 0
+        for(let i = 0; i < divisores.length; i++){
+            soma = soma + Number(divisores[i])
+        }
+        if(soma == valor) return true
+        return false
+    }
+    let valor = +prompt("Insira um valor para ver se ele é perfeito")
+    let divisoresValor = calcularDivisores(valor)
+    let valorEhPerfeito = ehPerfeito(divisoresValor, valor)
+    console.log(ehPerfeito(divisoresValor, valor))
 
 
 17)
-
+    function organizador(vetor){
+        let organizado = []
+        let maior = -1
+        let posicao 
+        for(let j = 49; j >= 0; j--){
+            for(let i = 0; i < 50; i++){
+                if(Number(vetor[i]) > maior){ 
+                    maior = vetor[i]
+                    posicao = i
+                }
+            }
+            organizado[j] = maior 
+            vetor[posicao] = -1
+            maior = -1
+        }
+        return organizado
+    }
+    let ram = []
+    for(let i = 0; i < 50; i++){
+        ram[i] = ((Math.random()) * 1000).toFixed()
+    }
+    console.log(organizador(ram))
 
 
 18)
-
+    function calcularBarkara(A, B, C){
+        let delta = (B ** 2) - (4 * A * C)
+        if(delta < 0) return "não foi posível calcular"
+        let resposta1 = (0 - B) + Math.sqrt(delta) / 2 * A
+        let resposta2 = (0 - B) - Math.sqrt(delta) / 2 * A
+        return `resposta': ${resposta1}\nresposta'': ${resposta2}`
+    }
+    let A = +prompt("insira o valor de A", 1)
+    let B = +prompt("insira o valor de B", 12)
+    let C = +prompt("insira o valor de C", -13)
+    console.log(calcularBarkara(A, B, C))
 
 
 19)
-
+    function separadorPares(vetor){
+        let sohPares = []
+        for(let i = 0; i < vetor.length; i++){
+            if(i % 2 == 0){
+                if(vetor[i] % 2 == 0) sohPares.push(vetor[i])
+            }
+        }
+        return sohPares
+    }
+    let vetor = []
+    for(let i = 0; i < 5; i++){
+        vetor[i] = +prompt("insira um valor")
+    }
+    console.log(separadorPares(vetor))
 
 
 20)
+    function sorteador(n1){
+        let ram = ((Math.random()) * 10).toFixed()
+        if(ram == n1) return `Parabéns! O número sorteado foi o ${ram}`
+        return `Que pena! O número sorteado foi o ${ram}`
+    }
 
+        let n1 = +prompt("insira um valor de 1 a 10")
+    console.log(sorteador(n1))
 
 
 21)
+    function analizaBissexto(ano){
+        if((n1 % 4 == 0 && n1 % 100 != 0) || (n1 % 100 == 0 && n1 % 400 == 0)) return `o ano ${ano} é bissexto`
+        return `o ano ${ano} não é bissexto`
+    }
 
-
-
-
-
+        let n1 = +prompt("insira um ano")
+    console.log(analizaBissexto(n1))
