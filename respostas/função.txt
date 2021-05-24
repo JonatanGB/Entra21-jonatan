@@ -224,6 +224,7 @@
     }
     console.log(organizador(copiaRam))
 
+
 18)
     function calcularBarkara(A, B, C){
         let delta = (B ** 2) - (4 * A * C)
@@ -262,7 +263,7 @@
         return `Que pena! O número sorteado foi o ${ram}`
     }
 
-        let n1 = +prompt("insira um valor de 1 a 10")
+    let n1 = +prompt("insira um valor de 1 a 10")
     console.log(sorteador(n1))
 
 

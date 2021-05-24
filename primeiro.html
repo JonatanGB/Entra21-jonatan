@@ -8,30 +8,17 @@
 <body>
     <script>
 
-    function organizador(vetor){
-        let organizado = []
-        let menor = 10000
-        let posicao 
-        for(let i = 0; i < 50; i++){
-            for(let j = 0; j < 50; j++){
-                if(+vetor[j] < menor){
-                    menor = vetor[j]
-                    posicao = j
-                }
-            }
-            organizado.push(menor)
-            menor = 10000
-            vetor[posicao] = 10000
-        }
-        return organizado
+function modificador(A) {
+        let modificado = A
+        modificado[1] = 10
+        modificado[2] = 30
+        return modificado
     }
-    let ram = []
-    let copiaRam = []
-    for(let i = 0; i < 50; i++){
-        ram[i] = ((Math.random()) * 1000).toFixed()
-        copiaRam[i] = ram[i]
+    let array = [] 
+    for(let i = 0; i < 5; i++){
+        array[i] = +prompt("Insira um valor")
     }
-    console.log(organizador(copiaRam))
+    console.log(`array original: \n${array}\n\narray modificado: \n${modificador(array)}`)
 
     </script>
 </body>
