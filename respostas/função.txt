@@ -8,23 +8,22 @@
 
 
 2)
-    function escolheMaior(A, B){
-        if(A > B) console.log(`${A} é maior`)
-        else if(A == B) console.log("Os dois são iguais")
-        else(console.log(`${B} é maior`))
+    function escolheMenor(A, B){
+        if(A > B) return B
+        return A
     }
-    let a = prompt("Insira o primeiro valor")
-    let b = prompt("Insira o segundo valor")
-    escolheMaior(a, b)
+    let a = +prompt("Insira o primeiro valor")
+    let b = +prompt("Insira o segundo valor")
+    console.log(escolheMenor(a, b))
 
 
 3)
-    function ehPositivo(A, B) {
+    function potenciação(A, B) {
         return A ** B
     }
     let A = +prompt("Insira um número")
     let B = +prompt("insirs um número")
-    console.log(ehPositivo(A, B))
+    console.log(potenciação(A, B))
 
 
 4)
@@ -50,12 +49,17 @@
 
 6)
     function pesoIdeal(G, A) {
-        if(G === "M")return 72.7 * A-58
-        if(G === "F")return 62.1 * A-44.7
+        if(G === "M")return 72.7 * A - 58
+        if(G === "F")return 62.1 * A - 44.7
     }
-    let genero = prompt("Insira seu sexo\nM - Masculino\nF - Feminino").toUpperCase()
-    let altura = prompt("Insira sua altura")
-    console.log(pesoIdeal(genero, altura
+    let genero
+    while(true){
+        genero = prompt("Insira seu sexo\nM - Masculino\nF - Feminino").toUpperCase()
+        if(genero == "M" || genero == "F") break
+        
+    }
+    let altura = +prompt("Insira sua altura")
+    console.log(pesoIdeal(genero, altura).toFixed(2))
 
 
 7)
@@ -115,7 +119,7 @@
 
 
 12)
-    function maiorEmonor(){
+    function maiorEmenor(){
         let maior = -1
         let menor = 1001
         let ram
@@ -126,7 +130,7 @@
     }
     return `O maior é ${maior} e o menor é ${menor}`
     }
-    console.log(maiorEmonor())
+    console.log(maiorEmenor())
 
 
 13)
@@ -159,9 +163,9 @@
     function calcularFatorial(N){
         let fatorial = 1
         for(let i = 1; i <= N; i++){
-            fatorial = fatorial * i
+            fatorial *= i
         }
-        return `O fatorial de ${N} é ${fatorial}`
+        return `O fatorial de ${N} é: ${fatorial}`
     }
     let valor = +prompt("Insira um número para calcular o fatorial")
     console.log(calcularFatorial(valor))
@@ -197,27 +201,28 @@
 17)
     function organizador(vetor){
         let organizado = []
-        let maior = -1
+        let menor = 10000
         let posicao 
-        for(let j = 49; j >= 0; j--){
-            for(let i = 0; i < 50; i++){
-                if(Number(vetor[i]) > maior){ 
-                    maior = vetor[i]
-                    posicao = i
+        for(let i = 0; i < 50; i++){
+            for(let j = 0; j < 50; j++){
+                if(+vetor[j] < menor){
+                    menor = vetor[j]
+                    posicao = j
                 }
             }
-            organizado[j] = maior 
-            vetor[posicao] = -1
-            maior = -1
+            organizado.push(menor)
+            menor = 10000
+            vetor[posicao] = 10000
         }
         return organizado
     }
     let ram = []
+    let copiaRam = []
     for(let i = 0; i < 50; i++){
         ram[i] = ((Math.random()) * 1000).toFixed()
+        copiaRam[i] = ram[i]
     }
-    console.log(organizador(ram))
-
+    console.log(organizador(copiaRam))
 
 18)
     function calcularBarkara(A, B, C){
@@ -263,7 +268,7 @@
 
 21)
     function analizaBissexto(ano){
-        if((n1 % 4 == 0 && n1 % 100 != 0) || (n1 % 100 == 0 && n1 % 400 == 0)) return `o ano ${ano} é bissexto`
+        if((ano % 4 == 0 && ano % 100 != 0) || (ano % 100 == 0 && ano % 400 == 0)) return `o ano ${ano} é bissexto`
         return `o ano ${ano} não é bissexto`
     }
 

@@ -8,15 +8,30 @@
 <body>
     <script>
 
-
-function escolheMaior(A, B){
-        if(A > B) console.log(`${A} é maior`)
-        else if(A == B) console.log("Os dois são iguais")
-        else(console.log(`${B} é maior`))
+    function organizador(vetor){
+        let organizado = []
+        let menor = 10000
+        let posicao 
+        for(let i = 0; i < 50; i++){
+            for(let j = 0; j < 50; j++){
+                if(+vetor[j] < menor){
+                    menor = vetor[j]
+                    posicao = j
+                }
+            }
+            organizado.push(menor)
+            menor = 10000
+            vetor[posicao] = 10000
+        }
+        return organizado
     }
-    let a = +prompt("Insira o primeiro valor")
-    let b = +prompt("Insira o segundo valor")
-    escolheMaior(a, b)
+    let ram = []
+    let copiaRam = []
+    for(let i = 0; i < 50; i++){
+        ram[i] = ((Math.random()) * 1000).toFixed()
+        copiaRam[i] = ram[i]
+    }
+    console.log(organizador(copiaRam))
 
     </script>
 </body>
