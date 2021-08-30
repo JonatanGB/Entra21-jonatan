@@ -8,17 +8,17 @@
 <body>
     <script>
 
-function modificador(A) {
-        let modificado = A
-        modificado[1] = 10
-        modificado[2] = 30
-        return modificado
+function calcularBarkara(A, B, C){
+        let delta = (B ** 2) - (4 * A * C)
+        if(delta < 0) return "não foi posível calcular"
+        let resposta1 = (-B + Math.sqrt(delta)) / (2 * A)
+        let resposta2 = (-B - Math.sqrt(delta)) / (2 * A)
+        return `resposta': ${resposta1}\nresposta''': ${resposta2}`
     }
-    let array = [] 
-    for(let i = 0; i < 5; i++){
-        array[i] = +prompt("Insira um valor")
-    }
-    console.log(`array original: \n${array}\n\narray modificado: \n${modificador(array)}`)
+    let A = +prompt("insira o valor de A", 1)
+    let B = +prompt("insira o valor de B", 12)
+    let C = +prompt("insira o valor de C", -13)
+    console.log(calcularBarkara(A, B, C))
 
     </script>
 </body>

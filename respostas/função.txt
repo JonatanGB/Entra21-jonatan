@@ -201,18 +201,18 @@
 17)
     function organizador(vetor){
         let organizado = []
-        let menor = 10000
+        let maior = -1
         let posicao 
         for(let i = 0; i < 50; i++){
             for(let j = 0; j < 50; j++){
-                if(+vetor[j] < menor){
-                    menor = vetor[j]
+                if(+vetor[j] > maior){
+                    maior = vetor[j]
                     posicao = j
                 }
             }
-            organizado.push(menor)
-            menor = 10000
-            vetor[posicao] = 10000
+            organizado.push(maior)
+            maior = -1
+            vetor[posicao] = -1
         }
         return organizado
     }
@@ -229,9 +229,9 @@
     function calcularBarkara(A, B, C){
         let delta = (B ** 2) - (4 * A * C)
         if(delta < 0) return "não foi posível calcular"
-        let resposta1 = (0 - B) + Math.sqrt(delta) / 2 * A
-        let resposta2 = (0 - B) - Math.sqrt(delta) / 2 * A
-        return `resposta': ${resposta1}\nresposta'': ${resposta2}`
+        let resposta1 = (-B + Math.sqrt(delta)) / (2 * A)
+        let resposta2 = (-B - Math.sqrt(delta)) / (2 * A)
+        return `resposta': ${resposta1}\nresposta''': ${resposta2}`
     }
     let A = +prompt("insira o valor de A", 1)
     let B = +prompt("insira o valor de B", 12)
