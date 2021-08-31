@@ -1,5 +1,7 @@
 const express = require("express");
 const router = express.Router();
+const multer = require("multer");
+const multerConfig = require("../config/multer")
 
 // Importando o controller
 const usersControllers = require("../controllers/usersControllers");
@@ -18,5 +20,8 @@ router.put("/:id", usersControllers.updateUser);
 
 // Remover um usuário
 router.delete("/:id", usersControllers.deleteUser);
+
+// Criar post para user
+router.post("/:id/posts", multer(multerConfig).single("image"), usersControllers.createPost);
 
 module.exports = router;
